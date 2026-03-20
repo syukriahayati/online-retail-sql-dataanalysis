@@ -9,7 +9,7 @@ The main goal of this project is to demonstrate data cleaning, SQL querying, and
 
 🧰 Tools Used
 
-MySQL, SQL, Tableau (for visualization/dashboard)
+MySQL, Python, Tableau (for visualization/dashboard), ChatGPT, Claude, Gemini
 
 
 📂 Dataset
