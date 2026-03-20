@@ -404,4 +404,20 @@ WHERE Quantity > 0
 GROUP BY day_name
 ORDER BY total_sales DESC;
 
+-- FINALIZATION
+-- to export your result to csv
+SELECT *
+INTO OUTFILE "C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/OnlineRetail_cleaned.csv"
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+FROM retail_staging;
+
+-- I had a problem visualize this result, it doesn't have column names, the format turns messy, and additional null columns everywhere. OMG.
+-- of course TABLEAU hate this kind of messy stuff. so they vomit it back. another headache confirm.
+-- at the end, I got help from AI to generate python script and run them in Google Colab.
+-- it works perfectly!
+-- check the python script in this file 'OnlineRetail_cleaning.ipynb'
+
 
